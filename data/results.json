@@ -1,0 +1,284 @@
+{
+  "verdicts": [
+    {
+      "id": "gen_do_it_1",
+      "verdict": "DO IT",
+      "category": "GENERAL",
+      "tagline": "The universe just shrugged and said 'why not?'",
+      "explanation": "Sometimes the best decision is the one you stop overthinking."
+    },
+    {
+      "id": "gen_do_it_2",
+      "verdict": "HELL YES",
+      "category": "GENERAL",
+      "tagline": "Full send. No regrets.",
+      "explanation": "If it excites you and scares you a little, it's the right choice."
+    },
+    {
+      "id": "gen_dont_1",
+      "verdict": "DON'T DO IT",
+      "category": "GENERAL",
+      "tagline": "Abort mission. I repeat, abort mission.",
+      "explanation": "You asked because you already knew it was a bad idea."
+    },
+    {
+      "id": "gen_dont_2",
+      "verdict": "HARD NO",
+      "category": "GENERAL",
+      "tagline": "Walk away slowly, then break into a sprint.",
+      "explanation": "Save your energy for something better."
+    },
+    {
+      "id": "gen_wait_1",
+      "verdict": "WAIT 24 HOURS",
+      "category": "GENERAL",
+      "tagline": "Sleep on it. Your brain needs a reboot.",
+      "explanation": "Impulse control is a beautiful thing. Give it a day."
+    },
+    {
+      "id": "gen_wait_2",
+      "verdict": "PAUSE",
+      "category": "GENERAL",
+      "tagline": "Hold your horses.",
+      "explanation": "Let the dust settle before making a move."
+    },
+    {
+      "id": "gen_alt_1",
+      "verdict": "TRY SOMETHING ELSE",
+      "category": "GENERAL",
+      "tagline": "Plot twist: neither of those.",
+      "explanation": "There is a third option you're ignoring."
+    },
+    {
+      "id": "gen_small_1",
+      "verdict": "TAKE THE SMALLER BET",
+      "category": "GENERAL",
+      "tagline": "Dip a toe before diving in.",
+      "explanation": "Test the waters. You don't have to commit fully yet."
+    },
+    {
+      "id": "gen_flip_1",
+      "verdict": "FLIP A COIN",
+      "category": "GENERAL",
+      "tagline": "Leave it to chance.",
+      "explanation": "If you're disappointed by the result, choose the other one."
+    },
+    {
+      "id": "gen_ask_1",
+      "verdict": "ASK A FRIEND",
+      "category": "GENERAL",
+      "tagline": "Phone a lifeline.",
+      "explanation": "You need an outside perspective on this one."
+    },
+    {
+      "id": "food_do_1",
+      "verdict": "EAT IT",
+      "category": "FOOD",
+      "tagline": "Your stomach has spoken.",
+      "explanation": "Life is too short for boring meals. Feast!"
+    },
+    {
+      "id": "food_do_2",
+      "verdict": "TREAT YOURSELF",
+      "category": "FOOD",
+      "tagline": "Calories don't count today.",
+      "explanation": "You earned it. Enjoy every bite."
+    },
+    {
+      "id": "food_dont_1",
+      "verdict": "SKIP IT",
+      "category": "FOOD",
+      "tagline": "Have a glass of water instead.",
+      "explanation": "You're probably just bored, not hungry."
+    },
+    {
+      "id": "food_alt_1",
+      "verdict": "COOK SOMETHING",
+      "category": "FOOD",
+      "tagline": "Look at what's in the fridge.",
+      "explanation": "Chef it up! Save some money and learn a skill."
+    },
+    {
+      "id": "food_alt_2",
+      "verdict": "ORDER DELIVERY",
+      "category": "FOOD",
+      "tagline": "Let someone else do the dishes.",
+      "explanation": "Maximum comfort, zero effort."
+    },
+    {
+      "id": "food_spicy_1",
+      "verdict": "GO SPICY",
+      "category": "FOOD",
+      "tagline": "Feel the burn.",
+      "explanation": "Live on the edge. Order the hot stuff."
+    },
+    {
+      "id": "shop_buy_1",
+      "verdict": "BUY IT",
+      "category": "SHOPPING",
+      "tagline": "Treat yourself. Add to cart.",
+      "explanation": "If you've been thinking about it for days, just get it."
+    },
+    {
+      "id": "shop_dont_1",
+      "verdict": "PUT IT BACK",
+      "category": "SHOPPING",
+      "tagline": "Your wallet thanks you.",
+      "explanation": "Do you need it, or do you just want the dopamine hit?"
+    },
+    {
+      "id": "shop_wait_1",
+      "verdict": "WAIT A WEEK",
+      "category": "SHOPPING",
+      "tagline": "The 7-day rule applies here.",
+      "explanation": "If you still want it next week, then buy it."
+    },
+    {
+      "id": "shop_alt_1",
+      "verdict": "BUY USED",
+      "category": "SHOPPING",
+      "tagline": "Thrift it.",
+      "explanation": "Save money and the planet. Look for a secondhand deal."
+    },
+    {
+      "id": "shop_save_1",
+      "verdict": "SAVE THE MONEY",
+      "category": "SHOPPING",
+      "tagline": "Watch the number go up.",
+      "explanation": "Future you will be grateful for the extra cash."
+    },
+    {
+      "id": "soc_text_1",
+      "verdict": "SEND THAT TEXT",
+      "category": "SOCIAL",
+      "tagline": "Hit send and throw your phone across the room.",
+      "explanation": "What's the worst that could happen?"
+    },
+    {
+      "id": "soc_dont_text_1",
+      "verdict": "DO NOT TEXT",
+      "category": "SOCIAL",
+      "tagline": "Put the phone down.",
+      "explanation": "Step away. It's a trap."
+    },
+    {
+      "id": "soc_go_1",
+      "verdict": "GO OUT",
+      "category": "SOCIAL",
+      "tagline": "Put on real pants.",
+      "explanation": "You might actually have fun. Go socialize."
+    },
+    {
+      "id": "soc_stay_1",
+      "verdict": "STAY IN",
+      "category": "SOCIAL",
+      "tagline": "Your couch misses you.",
+      "explanation": "Embrace the cozy hermit life tonight."
+    },
+    {
+      "id": "soc_call_1",
+      "verdict": "CALL THEM",
+      "category": "SOCIAL",
+      "tagline": "Use your voice.",
+      "explanation": "Texts get misinterpreted. Just call."
+    },
+    {
+      "id": "ent_watch_1",
+      "verdict": "WATCH IT",
+      "category": "ENTERTAINMENT",
+      "tagline": "Popcorn time.",
+      "explanation": "Dive in and enjoy the show."
+    },
+    {
+      "id": "ent_dont_1",
+      "verdict": "SKIP IT",
+      "category": "ENTERTAINMENT",
+      "tagline": "Don't waste your time.",
+      "explanation": "The reviews are right. It's not worth it."
+    },
+    {
+      "id": "ent_play_1",
+      "verdict": "PLAY A GAME",
+      "category": "ENTERTAINMENT",
+      "tagline": "Time to level up.",
+      "explanation": "Escape reality for a bit."
+    },
+    {
+      "id": "ent_read_1",
+      "verdict": "READ INSTEAD",
+      "category": "ENTERTAINMENT",
+      "tagline": "Books are better anyway.",
+      "explanation": "Give your eyes a break from the blue light."
+    },
+    {
+      "id": "study_do_1",
+      "verdict": "STUDY NOW",
+      "category": "STUDY",
+      "tagline": "Grind time.",
+      "explanation": "Future you will thank present you."
+    },
+    {
+      "id": "study_break_1",
+      "verdict": "TAKE A BREAK",
+      "category": "STUDY",
+      "tagline": "Brain full. Need rest.",
+      "explanation": "You can't pour from an empty cup. Relax."
+    },
+    {
+      "id": "study_sleep_1",
+      "verdict": "GO TO SLEEP",
+      "category": "STUDY",
+      "tagline": "Cramming doesn't work.",
+      "explanation": "Sleep will help you remember more than staying up."
+    },
+    {
+      "id": "study_group_1",
+      "verdict": "STUDY GROUP",
+      "category": "STUDY",
+      "tagline": "Misery loves company.",
+      "explanation": "Find a friend to suffer through this with."
+    },
+    {
+      "id": "trav_go_1",
+      "verdict": "BOOK THE FLIGHT",
+      "category": "TRAVEL",
+      "tagline": "Adventure is calling.",
+      "explanation": "Money returns. Time doesn't."
+    },
+    {
+      "id": "trav_dont_1",
+      "verdict": "STAY HOME",
+      "category": "TRAVEL",
+      "tagline": "There's no place like home.",
+      "explanation": "Maybe this isn't the right time. Plan for later."
+    },
+    {
+      "id": "trav_cheap_1",
+      "verdict": "GO BUDGET",
+      "category": "TRAVEL",
+      "tagline": "Hostel life it is.",
+      "explanation": "You don't need luxury to have a good time."
+    },
+    {
+      "id": "work_do_1",
+      "verdict": "DO IT",
+      "category": "WORK",
+      "tagline": "Secure the bag.",
+      "explanation": "It's a good career move. Take the leap."
+    },
+    {
+      "id": "work_dont_1",
+      "verdict": "DON'T DO IT",
+      "category": "WORK",
+      "tagline": "Not worth the stress.",
+      "explanation": "Your peace of mind is more important."
+    },
+    {
+      "id": "work_ask_1",
+      "verdict": "ASK FOR MORE",
+      "category": "WORK",
+      "tagline": "Know your worth.",
+      "explanation": "Don't settle. Negotiate."
+    }
+  ]
+}

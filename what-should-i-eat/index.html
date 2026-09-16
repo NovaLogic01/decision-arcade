@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Should I Eat? — Food Decision Maker | Decision Arcade</title>
+    <meta name="description" content="Can't decide what to eat? Pick your mood and get a food suggestion. Quick, fun, and surprisingly helpful.">
+    <link rel="canonical" href="https://decisionarcade.netlify.app/what-should-i-eat/">
+    
+    <meta property="og:title" content="What Should I Eat? — Food Decision Maker">
+    <meta property="og:description" content="Can't decide what to eat? Pick your mood and get a food suggestion. Quick, fun, and surprisingly helpful.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://decisionarcade.netlify.app/what-should-i-eat/">
+    <meta property="og:image" content="https://decisionarcade.netlify.app/assets/og-image.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What Should I Eat? — Food Decision Maker">
+    <meta name="twitter:description" content="Can't decide what to eat? Pick your mood and get a food suggestion.">
+    
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <style>
+        body { background-color: #0A0A0F; color: #F0EDE6; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        a { color: #7C5CFF; text-decoration: none; }
+        .skip-link { position: absolute; top: -40px; left: 0; background: #7C5CFF; color: white; padding: 8px; z-index: 100; }
+        .skip-link:focus { top: 0; }
+        header, footer { padding: 1rem 2rem; border-bottom: 1px solid #1a1a24; }
+        footer { border-top: 1px solid #1a1a24; border-bottom: none; text-align: center; padding: 2rem; }
+        .site-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .site-nav .logo { font-weight: bold; font-size: 1.2rem; color: #F0EDE6; }
+        .site-nav .links { display: flex; gap: 1.5rem; }
+        .site-nav .links a { color: #F0EDE6; }
+        main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h1 { text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #F0EDE6; }
+        .mood-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto; }
+        .mood-btn { background: rgba(26, 26, 36, 0.8); border: 1px solid #2a2a36; border-radius: 12px; padding: 1.5rem; text-align: center; color: #F0EDE6; cursor: pointer; transition: all 0.2s; font-size: 1.1rem; font-weight: bold; min-height: 48px; backdrop-filter: blur(10px); }
+        .mood-btn:hover { border-color: #7C5CFF; background: rgba(31, 31, 46, 0.9); transform: translateY(-2px); }
+        
+        #result-area { text-align: center; margin: 4rem 0; min-height: 200px; }
+        
+        .editorial, .faq { max-width: 800px; margin: 4rem auto; }
+        .editorial h2, .faq h2 { color: #F0EDE6; font-size: 2rem; margin-bottom: 1.5rem; }
+        .editorial p { color: #888899; margin-bottom: 1.5rem; }
+        .faq-item { margin-bottom: 2rem; }
+        .faq-item h3 { color: #F0EDE6; font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .faq-item p { color: #888899; margin: 0; }
+        
+        @media (max-width: 768px) { .site-nav .links { display: none; } }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    
+    <header>
+        <nav class="site-nav">
+            <a href="/" class="logo">Decision Arcade</a>
+            <div class="links">
+                <a href="/decision-maker/">Decision Maker</a>
+                <a href="/yes-or-no/">Yes or No</a>
+                <a href="/what-should-i-eat/">What Should I Eat</a>
+                <a href="/duel/">Duel</a>
+                <a href="/about/">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1>What Should I Eat Today?</h1>
+        
+        <div class="ad-slot ad-slot-header"></div>
+
+        <p style="text-align: center; color: #888899; font-size: 1.2rem; margin-bottom: 2rem;">Pick your mood, and we'll pick the food.</p>
+        
+        <div class="mood-grid">
+            <button class="mood-btn" onclick="pickFood('anything')">🍕 Anything</button>
+            <button class="mood-btn" onclick="pickFood('cheap')">💰 Something Cheap</button>
+            <button class="mood-btn" onclick="pickFood('healthy')">🥗 Something Healthy</button>
+            <button class="mood-btn" onclick="pickFood('comforting')">🍲 Something Comforting</button>
+            <button class="mood-btn" onclick="pickFood('surprise')">🎲 Surprise Me</button>
+        </div>
+
+        <div id="result-area">
+            <!-- Dynamic Result -->
+        </div>
+
+        <div class="ad-slot ad-slot-content"></div>
+
+        <section class="editorial">
+            <h2>Why Is It So Hard to Decide What to Eat?</h2>
+            <p>We've all been there: staring into the abyss of a delivery app or an open fridge, completely unable to decide what to eat. The "what do you want for dinner" problem is a classic example of choice paralysis. Having too many options actually makes it harder for our brains to make a decision.</p>
+            <p>Our food decision maker cuts through the noise by drastically limiting your choices based on your general mood. Instead of choosing between 50 restaurants, you just choose "cheap" or "healthy," and we assign you a specific category. Even if you reject the suggestion, that gut reaction ("Ugh, no, I don't want a salad") helps you narrow down what you actually DO want.</p>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How does the food picker work?</h3>
+                <p>Each mood maps to a curated set of food-themed verdicts. The result is deterministic based on the time and mood you select.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are these real restaurant recommendations?</h3>
+                <p>No — we suggest categories and moods, not specific restaurants. Think of it as deciding WHAT to eat, not WHERE.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I use this for meal planning?</h3>
+                <p>It's designed for spontaneous decisions, but honestly, hitting 'Surprise Me' five times for a week of dinners isn't the worst strategy.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why do I keep getting the same answer?</h3>
+                <p>The algorithm is pseudo-deterministic. Try a different mood for variety, or come back a bit later!</p>
+            </div>
+        </section>
+
+        <div class="ad-slot ad-slot-footer"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div style="margin-bottom: 1rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="/about/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">About</a>
+            <a href="/privacy/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Privacy Policy</a>
+            <a href="/terms/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Terms of Service</a>
+            <a href="/contact/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Contact</a>
+        </div>
+        <p class="text-muted" style="margin: 0;">&copy; 2026 Decision Arcade. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/seo.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+        const foods = {
+            anything: ['Pizza', 'Pasta', 'Sushi', 'Tacos', 'A burger', 'Stir fry', 'Sandwich', 'Curry'],
+            cheap: ['Rice and beans', 'Instant ramen (the good kind)', 'Grilled cheese', 'Eggs any way', 'PB&J (no shame)', 'Quesadilla'],
+            healthy: ['A big salad', 'Grain bowl', 'Grilled chicken & veggies', 'Soup', 'Smoothie bowl', 'Stir-fried tofu'],
+            comforting: ['Mac and cheese', 'Ramen', 'Pizza', 'Grilled cheese & tomato soup', 'Fried rice', 'Pancakes for dinner'],
+            surprise: [] // Will pull from all
+        };
+        // Populate surprise
+        Object.keys(foods).forEach(k => {
+            if(k !== 'surprise') foods.surprise = foods.surprise.concat(foods[k]);
+        });
+
+        function pickFood(mood) {
+            const area = document.getElementById('result-area');
+            area.innerHTML = '<div style="font-size: 1.5rem; color: #7C5CFF;">Thinking...</div>';
+            
+            setTimeout(() => {
+                const list = foods[mood];
+                const choice = list[Math.floor(Math.random() * list.length)]; // Random enough for food picker
+                
+                area.innerHTML = `
+                    <div style="color: #7C5CFF; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">You should have</div>
+                    <div style="font-size: 4rem; font-weight: bold; color: #F0EDE6; text-shadow: 0 0 20px rgba(124, 92, 255, 0.4);">${choice}</div>
+                `;
+            }, 800);
+        }
+    </script>
+</body>
+</html>
