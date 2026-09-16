@@ -31,27 +31,26 @@
         containerEl.innerHTML = '';
         
         if (paramA && paramB) {
-            // SHARED DUEL MODE
             const header = document.createElement('h3');
-            header.className = 'text-accent text-sm uppercase mb-4 text-center';
+            header.className = 'verdict-tagline text-center';
             header.textContent = 'YOUR FRIEND HAS A DECISION';
             
             const sub = document.createElement('p');
-            sub.className = 'text-center mb-6 text-muted';
+            sub.className = 'text-center text-muted mb-6';
+            sub.style.marginBottom = '2rem';
             sub.textContent = "They can't choose between...";
             
             const vsDiv = document.createElement('div');
-            vsDiv.className = 'vs-container flex justify-between items-center bg-gray-900 p-6 rounded-lg mb-8';
-            vsDiv.style.display = 'flex';
-            vsDiv.style.justifyContent = 'space-around';
+            vsDiv.className = 'mode-card';
+            vsDiv.style.flexDirection = 'row';
+            vsDiv.style.justifyContent = 'space-between';
             vsDiv.style.alignItems = 'center';
-            vsDiv.style.padding = '2rem';
-            vsDiv.style.background = '#1a1a24';
-            vsDiv.style.borderRadius = '8px';
             vsDiv.style.marginBottom = '2rem';
+            vsDiv.style.cursor = 'default';
             
             const aEl = document.createElement('div');
-            aEl.className = 'text-xl font-bold';
+            aEl.className = 'text-xl font-bold text-primary';
+            aEl.style.fontSize = '1.5rem';
             aEl.textContent = paramA;
             
             const vsText = document.createElement('div');
@@ -59,7 +58,8 @@
             vsText.textContent = 'vs';
             
             const bEl = document.createElement('div');
-            bEl.className = 'text-xl font-bold';
+            bEl.className = 'text-xl font-bold text-primary';
+            bEl.style.fontSize = '1.5rem';
             bEl.textContent = paramB;
             
             vsDiv.appendChild(aEl);
@@ -67,8 +67,10 @@
             vsDiv.appendChild(bEl);
             
             const revealBtn = document.createElement('button');
-            revealBtn.className = 'btn btn-primary w-full max-w-md mx-auto block';
+            revealBtn.className = 'btn btn-primary';
             revealBtn.style.display = 'block';
+            revealBtn.style.width = '100%';
+            revealBtn.style.maxWidth = '400px';
             revealBtn.style.margin = '0 auto';
             revealBtn.textContent = 'Reveal the Answer';
             revealBtn.onclick = () => Duel.showResult(containerEl, paramA, paramB);
@@ -79,34 +81,32 @@
             containerEl.appendChild(revealBtn);
             
         } else {
-            // INPUT MODE
             const form = document.createElement('div');
-            form.className = 'duel-form flex-col gap-4 max-w-md mx-auto';
+            form.className = 'duel-form';
             form.style.display = 'flex';
             form.style.flexDirection = 'column';
             form.style.gap = '1rem';
-            form.style.maxWidth = '400px';
+            form.style.maxWidth = '500px';
             form.style.margin = '0 auto';
             
             const inputA = document.createElement('input');
             inputA.type = 'text';
-            inputA.className = 'input-field min-h-12 p-3 bg-gray-900 text-white border border-gray-700 rounded';
+            inputA.className = 'input-field';
             inputA.placeholder = 'Option A (e.g. Pizza)';
-            inputA.style.width = '100%';
             
             const vsDiv = document.createElement('div');
-            vsDiv.className = 'text-center text-muted italic my-2';
+            vsDiv.className = 'text-center text-muted italic';
             vsDiv.textContent = 'vs';
             
             const inputB = document.createElement('input');
             inputB.type = 'text';
-            inputB.className = 'input-field min-h-12 p-3 bg-gray-900 text-white border border-gray-700 rounded';
+            inputB.className = 'input-field';
             inputB.placeholder = 'Option B (e.g. Sushi)';
-            inputB.style.width = '100%';
             
             const submitBtn = document.createElement('button');
-            submitBtn.className = 'btn btn-primary mt-4 py-3';
-            submitBtn.textContent = 'DUEL!';
+            submitBtn.className = 'btn btn-primary';
+            submitBtn.style.marginTop = '1rem';
+            submitBtn.textContent = 'Start Duel';
             submitBtn.onclick = () => {
                 const a = inputA.value.trim();
                 const b = inputB.value.trim();
@@ -128,7 +128,10 @@
         containerEl.innerHTML = '';
         
         const loader = document.createElement('div');
-        loader.className = 'text-center py-12 fade-in';
+        loader.className = 'text-center reveal text-accent text-lg';
+        loader.style.padding = '3rem';
+        loader.style.letterSpacing = '2px';
+        loader.style.textTransform = 'uppercase';
         loader.textContent = 'The arena is deciding...';
         containerEl.appendChild(loader);
         
@@ -139,28 +142,28 @@
             containerEl.innerHTML = '';
             
             const resultDiv = document.createElement('div');
-            resultDiv.className = 'duel-result text-center fade-in';
+            resultDiv.className = 'verdict-result text-center reveal';
             
             const badge = document.createElement('div');
-            badge.className = 'text-accent uppercase text-sm font-bold tracking-widest mb-4';
+            badge.className = 'verdict-tagline';
             badge.textContent = 'THE WINNER';
             
             const winnerEl = document.createElement('h2');
-            winnerEl.className = 'text-5xl font-bold mb-8 text-white';
-            winnerEl.style.textShadow = '0 0 20px rgba(124, 92, 255, 0.5)';
+            winnerEl.className = 'verdict-text';
             winnerEl.textContent = winner;
             
-            const loserEl = document.createElement('div');
-            loserEl.className = 'text-xl text-gray-500 line-through mb-12';
-            loserEl.textContent = loser;
+            const loserEl = document.createElement('p');
+            loserEl.className = 'text-muted';
+            loserEl.style.fontSize = '1.25rem';
+            loserEl.style.marginTop = '2rem';
+            loserEl.textContent = 'Sorry, ' + loser + '. Not today.';
             
             const actionsDiv = document.createElement('div');
-            actionsDiv.className = 'flex flex-col gap-4 max-w-sm mx-auto';
+            actionsDiv.className = 'action-buttons';
             actionsDiv.style.display = 'flex';
-            actionsDiv.style.flexDirection = 'column';
             actionsDiv.style.gap = '1rem';
-            actionsDiv.style.maxWidth = '300px';
-            actionsDiv.style.margin = '0 auto';
+            actionsDiv.style.justifyContent = 'center';
+            actionsDiv.style.marginTop = '3rem';
             
             const shareBtn = document.createElement('button');
             shareBtn.className = 'btn btn-primary';
@@ -168,21 +171,20 @@
             shareBtn.onclick = () => {
                 const url = Duel.buildDuelUrl(optionA, optionB);
                 navigator.clipboard.writeText(url).then(() => {
-                    shareBtn.textContent = 'Link Copied!';
+                    shareBtn.textContent = 'Copied!';
                     setTimeout(() => shareBtn.textContent = 'Share Duel', 2000);
                 });
             };
             
-            const newDuelBtn = document.createElement('button');
-            newDuelBtn.className = 'btn btn-outline';
-            newDuelBtn.textContent = 'New Duel';
-            newDuelBtn.onclick = () => {
-                window.history.pushState({}, '', '/duel/');
-                Duel.init(containerEl);
+            const newBtn = document.createElement('button');
+            newBtn.className = 'btn btn-outline';
+            newBtn.textContent = 'New Duel';
+            newBtn.onclick = () => {
+                window.location.href = '/duel/';
             };
             
             actionsDiv.appendChild(shareBtn);
-            actionsDiv.appendChild(newDuelBtn);
+            actionsDiv.appendChild(newBtn);
             
             resultDiv.appendChild(badge);
             resultDiv.appendChild(winnerEl);
@@ -192,7 +194,7 @@
             containerEl.appendChild(resultDiv);
             
             if (window.DecisionArcade.History) {
-                window.DecisionArcade.History.save({ question: `${optionA} vs ${optionB}`, result: winner, mode: 'Duel' });
+                window.DecisionArcade.History.save({ question: optionA + ' vs ' + optionB, result: winner, mode: 'Duel' });
             }
         }, 1500);
     };

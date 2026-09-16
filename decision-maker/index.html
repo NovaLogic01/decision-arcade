@@ -3,185 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Decision Maker Tool ‚Äî Help Me Decide | Decision Arcade</title>
+    <title>Free Decision Maker Tool ó Help Me Decide | Decision Arcade</title>
     <meta name="description" content="Can't make up your mind? Use our free decision making tool. Get a random verdict, trust your gut with a quick quiz, or duel two options head-to-head.">
     <link rel="canonical" href="https://decisionarcade.netlify.app/decision-maker/">
     
-    <meta property="og:title" content="Free Decision Maker Tool ‚Äî Help Me Decide">
+    <meta property="og:title" content="Free Decision Maker Tool ó Help Me Decide">
     <meta property="og:description" content="Can't make up your mind? Random verdict, gut check quiz, or head-to-head duel. Free, instant, shareable.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://decisionarcade.netlify.app/decision-maker/">
     <meta property="og:image" content="https://decisionarcade.netlify.app/assets/og-image.svg">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Free Decision Maker Tool ‚Äî Help Me Decide">
+    <meta name="twitter:title" content="Free Decision Maker Tool ó Help Me Decide">
     <meta name="twitter:description" content="Can't make up your mind? Random verdict, gut check quiz, or head-to-head duel. Free, instant, shareable.">
     <meta name="twitter:image" content="https://decisionarcade.netlify.app/assets/og-image.svg">
     
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/css/style.css">
-    
     <style>
-        body { background-color: #0A0A0F; color: #F0EDE6; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        a { color: #7C5CFF; text-decoration: none; }
-        .skip-link { position: absolute; top: -40px; left: 0; background: #7C5CFF; color: white; padding: 8px; z-index: 100; }
-        .skip-link:focus { top: 0; }
-        header, footer { padding: 1rem 2rem; border-bottom: 1px solid #1a1a24; }
-        footer { border-top: 1px solid #1a1a24; border-bottom: none; text-align: center; padding: 2rem; }
-        .site-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-        .site-nav .logo { font-weight: bold; font-size: 1.2rem; color: #F0EDE6; }
-        .site-nav .links { display: flex; gap: 1.5rem; }
-        .site-nav .links a { color: #F0EDE6; }
-        main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        h1 { text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #F0EDE6; }
-        .screen { display: none; }
-        .screen.active { display: block; }
-        
-        .input-field { background: #1a1a24; border: 1px solid #2a2a36; color: #F0EDE6; padding: 1rem; width: 100%; max-width: 600px; border-radius: 8px; font-size: 1.1rem; margin-bottom: 1.5rem; min-height: 48px; }
-        .btn-primary { background: #7C5CFF; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.1rem; cursor: pointer; min-height: 48px; font-weight: bold; }
-        
-        .mode-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-        .mode-card-btn { background: #1a1a24; border: 1px solid #2a2a36; border-radius: 12px; padding: 2rem; text-align: center; color: #F0EDE6; cursor: pointer; transition: all 0.2s; min-height: 48px; display: block; width: 100%; }
-        .mode-card-btn:hover { border-color: #7C5CFF; background: #1f1f2e; }
-        .mode-card-btn h3 { color: #7C5CFF; margin-top: 0; font-size: 1.5rem; }
-        .mode-card-btn p { color: #888899; margin: 0; }
-        
-        .editorial, .faq { max-width: 800px; margin: 4rem auto; }
-        .editorial h2, .faq h2 { color: #F0EDE6; font-size: 2rem; margin-bottom: 1.5rem; }
-        .editorial h3 { color: #7C5CFF; font-size: 1.5rem; margin-top: 2rem; }
-        .editorial p { color: #888899; margin-bottom: 1.5rem; }
-        .faq-item { margin-bottom: 2rem; }
-        .faq-item h3 { color: #F0EDE6; font-size: 1.2rem; margin-bottom: 0.5rem; }
-        .faq-item p { color: #888899; margin: 0; }
-        
-        @media (max-width: 768px) { .site-nav .links { display: none; } }
+      .editorial-section { max-width: 800px; margin: 6rem auto; }
+      .editorial-section h2 { margin-bottom: 2rem; font-size: 2rem; }
+      .editorial-section h3 { margin-top: 3rem; margin-bottom: 1rem; color: var(--text-primary); }
+      .editorial-section p { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7; }
+      .faq-item { margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
+      .faq-item h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+      .faq-item p { margin-bottom: 0; }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to content</a>
-    
-    <header>
-        <nav class="site-nav">
-            <a href="/" class="logo">Decision Arcade</a>
+    <div class="container">
+        <header>
+            <nav class="site-nav">
+                <a href="/" class="logo">Decision Arcade</a>
+                <div class="links">
+                    <a href="/decision-maker/">Tools</a>
+                    <a href="/about/">About</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div class="ad-slot ad-slot-header"></div>
+
+            <!-- SCREEN 1: Input -->
+            <div id="screen-input" class="screen active text-center reveal" style="padding: 4rem 0;">
+                <h1 style="margin-bottom: 1rem;">What's on your mind?</h1>
+                <p class="text-muted" style="margin-bottom: 3rem;">Enter your dilemma to begin.</p>
+                <form id="decision-form">
+                    <div style="position: relative; max-width: 700px; margin: 0 auto;">
+                        <input type="text" id="question-input" class="input-field" placeholder="e.g. Should I accept the offer?" required autocomplete="off" style="padding-right: 120px;">
+                        <button type="submit" class="btn btn-primary" style="position: absolute; right: 8px; top: 8px; bottom: 8px; padding: 0 1.5rem;">Continue</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- SCREEN 2: Modes -->
+            <div id="screen-modes" class="screen text-center" style="padding: 4rem 0;">
+                <h2 style="margin-bottom: 1rem;">Choose your approach</h2>
+                <p class="text-muted" style="margin-bottom: 3rem;">How do you want to resolve this?</p>
+                
+                <div class="modes-grid" style="margin-bottom: 3rem;">
+                    <div class="mode-card" onclick="startMode('fate')">
+                        <h3>Fate</h3>
+                        <p>Leave it to the universe. Get a random, definitive verdict.</p>
+                    </div>
+                    <div class="mode-card" onclick="startMode('instinct')">
+                        <h3>Instinct</h3>
+                        <p>Take a rapid gut-check to reveal what you actually want.</p>
+                    </div>
+                    <div class="mode-card" onclick="startMode('duel')">
+                        <h3>Duel</h3>
+                        <p>Pit two specific options head-to-head.</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn-ghost" onclick="goBackToInput()">? Change Question</button>
+            </div>
+
+            <!-- SCREEN 3: Result -->
+            <div id="screen-result" class="screen">
+                <div id="engine-container"></div>
+            </div>
+            
+            <div id="history-container" style="margin-top: 4rem; max-width: 800px; margin: 4rem auto 0;"></div>
+
+            <div class="ad-slot ad-slot-content"></div>
+
+            <section class="editorial-section">
+                <h2>How Decision Arcade Works</h2>
+                <p>Decision-making fatigue is real ó psychologists call it 'decision fatigue' and studies show adults make over 35,000 decisions daily. Sometimes the hardest ones aren't the big life-changers but the everyday choices that pile up. Decision Arcade gives you three different ways to cut through the noise.</p>
+                
+                <h3>Fate Mode ó Leave It to the Universe</h3>
+                <p>Fate uses a deterministic random algorithm seeded by your question text. That means the same question always gets the same answer ó which makes results shareable and reproducible. It's not truly 'random' in the way a coin flip is; it's more like the universe assigning each question its own predetermined answer. The verdicts are category-aware: ask about food and you'll get food-themed responses.</p>
+                
+                <h3>Instinct Mode ó Trust Your Gut</h3>
+                <p>Instinct is a four-question quiz designed to surface what you're already leaning toward. It's NOT a personality test or psychological assessment ó it's a mirror. Each question is designed to trigger your gut reaction, and by the end, the pattern usually reveals a clear lean. Research on 'thin-slicing' (rapid cognition) suggests your first instinct is often more reliable than extended deliberation for certain types of decisions.</p>
+                
+                <h3>Duel Mode ó Head-to-Head Showdown</h3>
+                <p>Duel is for when you've narrowed it down to two options but can't pick. Enter both, and Duel picks a winner using the same deterministic algorithm as Fate. The real magic is sharing ó send the Duel link to a friend and they'll see 'Your friend has a decision' before the reveal.</p>
+            </section>
+
+            <section class="editorial-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>Is Decision Arcade really free?</h3>
+                    <p>Yes, completely free. No sign-up, no premium tier, no hidden costs. We're supported by ads.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How does the random decision maker work?</h3>
+                    <p>Fate mode uses a deterministic hash algorithm seeded by your question text. The same question always produces the same verdict, which means your results are reproducible and shareable.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Does Decision Arcade store my data?</h3>
+                    <p>Your last 20 decisions are saved in your browser's local storage ó that means they stay on your device and are never sent to any server. You can clear your history at any time.</p>
+                </div>
+            </section>
+
+            <div class="ad-slot ad-slot-footer"></div>
+        </main>
+
+        <footer class="site-footer">
             <div class="links">
-                <a href="/decision-maker/">Decision Maker</a>
-                <a href="/yes-or-no/">Yes or No</a>
-                <a href="/what-should-i-eat/">What Should I Eat</a>
-                <a href="/duel/">Duel</a>
                 <a href="/about/">About</a>
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <a href="/contact/">Contact</a>
             </div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        <h1>Decision Maker</h1>
-        
-        <div class="ad-slot ad-slot-header"></div>
-
-        <!-- SCREEN 1: Input -->
-        <div id="screen-input" class="screen active text-center" style="text-align: center;">
-            <p style="color: #888899; font-size: 1.2rem; margin-bottom: 2rem;">What's on your mind?</p>
-            <form id="decision-form">
-                <input type="text" id="question-input" class="input-field" placeholder="Should I quit my job? Pizza or sushi? Text them back?" required>
-                <br>
-                <button type="submit" class="btn-primary">Next Step</button>
-            </form>
-        </div>
-
-        <!-- SCREEN 2: Modes -->
-        <div id="screen-modes" class="screen" style="text-align: center;">
-            <h2 style="margin-bottom: 1rem;">Choose Your Approach</h2>
-            <p style="color: #888899;">How do you want to decide?</p>
-            
-            <div class="mode-cards">
-                <button class="mode-card-btn" onclick="startMode('fate')">
-                    <h3>üé≤ Fate</h3>
-                    <p>Leave it to the universe. Get a random, definitive verdict.</p>
-                </button>
-                <button class="mode-card-btn" onclick="startMode('instinct')">
-                    <h3>üí° Instinct</h3>
-                    <p>Take a quick 4-question gut check to reveal what you actually want.</p>
-                </button>
-                <button class="mode-card-btn" onclick="startMode('duel')">
-                    <h3>‚öîÔ∏è Duel</h3>
-                    <p>Pit two specific options head-to-head in a sudden-death match.</p>
-                </button>
-            </div>
-            
-            <button class="btn-primary" style="margin-top: 2rem; background: transparent; border: 1px solid #7C5CFF;" onclick="goBackToInput()">‚Üê Change Question</button>
-        </div>
-
-        <!-- SCREEN 3: Result -->
-        <div id="screen-result" class="screen">
-            <div id="engine-container" style="min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;"></div>
-        </div>
-        
-        <div id="history-container" style="margin-top: 4rem;"></div>
-
-        <div class="ad-slot ad-slot-content"></div>
-
-        <section class="editorial">
-            <h2>How Decision Arcade Works</h2>
-            <p>Decision-making fatigue is real ‚Äî psychologists call it 'decision fatigue' and studies show adults make over 35,000 decisions daily. Sometimes the hardest ones aren't the big life-changers but the everyday choices that pile up. Decision Arcade gives you three different ways to cut through the noise.</p>
-            
-            <h3>Fate Mode ‚Äî Leave It to the Universe</h3>
-            <p>Fate uses a deterministic random algorithm seeded by your question text. That means the same question always gets the same answer ‚Äî which makes results shareable and reproducible. It's not truly 'random' in the way a coin flip is; it's more like the universe assigning each question its own predetermined answer. The verdicts are category-aware: ask about food and you'll get food-themed responses.</p>
-            
-            <h3>Instinct Mode ‚Äî Trust Your Gut</h3>
-            <p>Instinct is a four-question quiz designed to surface what you're already leaning toward. It's NOT a personality test or psychological assessment ‚Äî it's a mirror. Each question is designed to trigger your gut reaction, and by the end, the pattern usually reveals a clear lean. Research on 'thin-slicing' (rapid cognition) suggests your first instinct is often more reliable than extended deliberation for certain types of decisions.</p>
-            
-            <h3>Duel Mode ‚Äî Head-to-Head Showdown</h3>
-            <p>Duel is for when you've narrowed it down to two options but can't pick. Enter both, and Duel picks a winner using the same deterministic algorithm as Fate. The real magic is sharing ‚Äî send the Duel link to a friend and they'll see 'Your friend has a decision' before the reveal. It's decisions as entertainment.</p>
-            
-            <p style="margin-top: 2rem;">No sign-up, no data collection, no AI. Your decisions stay on your device in your browser's local storage. Use it for fun, use it to break a deadlock, or use it to prove to your friend that pizza was always the right call.</p>
-        </section>
-
-        <section class="faq">
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <h3>Is Decision Arcade really free?</h3>
-                <p>Yes, completely free. No sign-up, no premium tier, no hidden costs. We're supported by ads.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>How does the random decision maker work?</h3>
-                <p>Fate mode uses a deterministic hash algorithm seeded by your question text. The same question always produces the same verdict, which means your results are reproducible and shareable. It's not truly random ‚Äî think of it as the universe having a predetermined answer for every question.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Is the Instinct quiz a real psychological test?</h3>
-                <p>No, and we don't claim it is. Instinct is a playful four-question exercise designed to surface your existing gut feeling. It's based on the idea that you usually already know what you want ‚Äî you just need help hearing it. It's not clinically validated or based on any specific psychological framework.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Does Decision Arcade store my data?</h3>
-                <p>Your last 20 decisions are saved in your browser's local storage ‚Äî that means they stay on your device and are never sent to any server. You can clear your history at any time. We don't have accounts, databases, or any way to see what you've asked.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Can I share my results?</h3>
-                <p>Yes! Every result has a Share button that uses your device's native sharing (on mobile) or copies a link to your clipboard (on desktop). Duel mode generates a unique shareable URL. You can also download a result card image to post on social media.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>What should I use Decision Arcade for?</h3>
-                <p>Anything from 'what should I eat for dinner' to 'should I text my ex' (please don't) to 'which movie should I watch tonight.' It's designed for everyday decisions, not life-or-death choices. Please don't use it to make medical, legal, or financial decisions.</p>
-            </div>
-        </section>
-
-        <div class="ad-slot ad-slot-footer"></div>
-    </main>
-
-    <footer class="site-footer">
-        <div style="margin-bottom: 1rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-            <a href="/about/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">About</a>
-            <a href="/privacy/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Privacy Policy</a>
-            <a href="/terms/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Terms of Service</a>
-            <a href="/contact/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Contact</a>
-        </div>
-        <p class="text-muted" style="margin: 0;">&copy; 2026 Decision Arcade. All rights reserved.</p>
-    </footer>
+            <p class="text-muted" style="font-size: 0.85rem;">&copy; 2026 Decision Arcade. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="/js/seo.js"></script>
     <script src="/js/app.js"></script>
@@ -198,11 +151,14 @@
             if(q) {
                 sessionStorage.setItem('da_current_question', q);
                 document.getElementById('screen-input').classList.remove('active');
-                document.getElementById('screen-modes').classList.add('active');
+                
+                // Slight delay for cinematic feel
+                setTimeout(() => {
+                    document.getElementById('screen-modes').classList.add('active');
+                }, 100);
             }
         });
 
-        // Check if there's a stored question on load
         window.addEventListener('DOMContentLoaded', () => {
             const q = sessionStorage.getItem('da_current_question');
             const urlQ = new URLSearchParams(window.location.search).get('q');
@@ -218,23 +174,27 @@
 
         function goBackToInput() {
             document.getElementById('screen-modes').classList.remove('active');
-            document.getElementById('screen-input').classList.add('active');
+            setTimeout(() => {
+                document.getElementById('screen-input').classList.add('active');
+            }, 100);
         }
 
         function startMode(mode) {
             document.getElementById('screen-modes').classList.remove('active');
-            document.getElementById('screen-result').classList.add('active');
             
-            const container = document.getElementById('engine-container');
-            container.innerHTML = '';
-            
-            if (mode === 'fate' && window.DecisionArcade.Fate) {
-                window.DecisionArcade.Fate.init(container);
-            } else if (mode === 'instinct' && window.DecisionArcade.Instinct) {
-                window.DecisionArcade.Instinct.init(container);
-            } else if (mode === 'duel') {
-                window.location.href = '/duel/';
-            }
+            setTimeout(() => {
+                document.getElementById('screen-result').classList.add('active');
+                const container = document.getElementById('engine-container');
+                container.innerHTML = '';
+                
+                if (mode === 'fate' && window.DecisionArcade.Fate) {
+                    window.DecisionArcade.Fate.init(container);
+                } else if (mode === 'instinct' && window.DecisionArcade.Instinct) {
+                    window.DecisionArcade.Instinct.init(container);
+                } else if (mode === 'duel') {
+                    window.location.href = '/duel/';
+                }
+            }, 300);
         }
     </script>
 </body>

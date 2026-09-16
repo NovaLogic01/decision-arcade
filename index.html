@@ -3,121 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decision Arcade — Can't Decide? We'll Fix That</title>
+    <title>Decision Arcade � Can't Decide? We'll Fix That</title>
     <meta name="description" content="Free online decision maker. Type your dilemma, pick a mode, and get an instant answer. Shareable results, no sign-up required.">
     <link rel="canonical" href="https://decisionarcade.netlify.app/">
     
-    <meta property="og:title" content="Decision Arcade — Can't Decide? We'll Fix That">
+    <meta property="og:title" content="Decision Arcade � Can't Decide? We'll Fix That">
     <meta property="og:description" content="Free decision maker tool. Get a random verdict, trust your gut with a quick quiz, or duel two options head-to-head.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://decisionarcade.netlify.app/">
     <meta property="og:image" content="https://decisionarcade.netlify.app/assets/og-image.svg">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Decision Arcade — Can't Decide? We'll Fix That">
+    <meta name="twitter:title" content="Decision Arcade � Can't Decide? We'll Fix That">
     <meta name="twitter:description" content="Free decision maker tool. Get a random verdict, trust your gut with a quick quiz, or duel two options head-to-head.">
     <meta name="twitter:image" content="https://decisionarcade.netlify.app/assets/og-image.svg">
     
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/css/style.css">
-    
-    <style>
-        /* Essential inline styles for structure matching the dark cinematic design */
-        body { background-color: #0A0A0F; color: #F0EDE6; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        a { color: #7C5CFF; text-decoration: none; }
-        .skip-link { position: absolute; top: -40px; left: 0; background: #7C5CFF; color: white; padding: 8px; z-index: 100; }
-        .skip-link:focus { top: 0; }
-        header, footer { padding: 1rem 2rem; border-bottom: 1px solid #1a1a24; }
-        footer { border-top: 1px solid #1a1a24; border-bottom: none; text-align: center; padding: 2rem; }
-        .site-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-        .site-nav .logo { font-weight: bold; font-size: 1.2rem; color: #F0EDE6; }
-        .site-nav .links { display: flex; gap: 1.5rem; }
-        .site-nav .links a { color: #F0EDE6; }
-        main { max-width: 1200px; margin: 0 auto; padding: 2rem; min-height: 80vh; }
-        .hero { text-align: center; padding: 4rem 0; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: #F0EDE6; }
-        .text-muted { color: #888899; }
-        .input-field { background: #1a1a24; border: 1px solid #2a2a36; color: #F0EDE6; padding: 1rem; width: 100%; max-width: 500px; border-radius: 8px; font-size: 1.1rem; margin-bottom: 1rem; min-height: 48px; }
-        .btn-primary { background: #7C5CFF; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.1rem; cursor: pointer; min-height: 48px; font-weight: bold; }
-        .btn-primary:hover { background: #6b4de6; }
-        .modes-preview { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem 0; }
-        .mode-card { background: #1a1a24; padding: 2rem; border-radius: 12px; text-align: center; transition: transform 0.2s; border: 1px solid #2a2a36; display: block; }
-        .mode-card:hover { transform: translateY(-5px); border-color: #7C5CFF; }
-        .mode-card h3 { color: #F0EDE6; font-size: 1.5rem; margin-top: 0; }
-        .mode-card p { color: #888899; margin-bottom: 0; }
-        .how-it-works { text-align: center; max-width: 800px; margin: 4rem auto; }
-        @media (max-width: 768px) { .site-nav .links { display: none; } }
-    </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to content</a>
-    
-    <header>
-        <nav class="site-nav">
-            <a href="/" class="logo">Decision Arcade</a>
-            <div class="links">
-                <a href="/decision-maker/">Decision Maker</a>
-                <a href="/yes-or-no/">Yes or No</a>
-                <a href="/what-should-i-eat/">What Should I Eat</a>
-                <a href="/duel/">Duel</a>
-                <a href="/about/">About</a>
+    <div class="container">
+        <header>
+            <nav class="site-nav reveal">
+                <a href="/" class="logo">Decision Arcade</a>
+                <div class="links">
+                    <a href="/decision-maker/">Tools</a>
+                    <a href="/about/">About</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content" class="flex-center" style="flex-direction: column; text-align: center; justify-content: center;">
+            <div style="max-width: 800px; width: 100%;">
+                <h1 class="reveal reveal-delay-1" style="margin-bottom: 0.5rem;">Can't decide?</h1>
+                <p class="reveal reveal-delay-1 text-muted" style="margin-bottom: 3rem;">We'll fix that.</p>
+                
+                <form id="home-form" action="/decision-maker/" method="GET" class="reveal reveal-delay-2">
+                    <div style="position: relative; max-width: 700px; margin: 0 auto;">
+                        <input type="text" name="q" id="home-input" class="input-field" placeholder="What's your dilemma?" required autocomplete="off" style="padding-right: 120px;">
+                        <button type="submit" class="btn btn-primary" style="position: absolute; right: 8px; top: 8px; bottom: 8px; padding: 0 1.5rem;">Resolve</button>
+                    </div>
+                </form>
             </div>
-            <button class="mobile-nav-toggle" style="display:none; min-height:48px; min-width:48px;" aria-label="Toggle Menu">☰</button>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        <section class="hero">
-            <h1>Can't Decide?</h1>
-            <p class="text-muted" style="font-size: 1.2rem; margin-bottom: 2rem;">Type your dilemma. We'll help.</p>
             
-            <form id="home-form" action="/decision-maker/" method="GET">
-                <input type="text" name="q" id="home-input" class="input-field" placeholder="Should I quit my job? Pizza or sushi? Text them back?" required>
-                <br>
-                <button type="submit" class="btn-primary">Let's Go</button>
-            </form>
-        </section>
+            <div class="ad-slot ad-slot-content"></div>
 
-        <div class="ad-slot ad-slot-content">
-            
-        </div>
+            <section class="modes-grid reveal reveal-delay-3" style="margin-top: 6rem; text-align: left;">
+                <a href="/decision-maker/" class="mode-card">
+                    <h3>Fate</h3>
+                    <p>Leave it to the universe. Get a definitive, deterministic verdict.</p>
+                </a>
+                
+                <a href="/decision-maker/" class="mode-card">
+                    <h3>Instinct</h3>
+                    <p>Take a rapid gut-check to reveal what you actually want.</p>
+                </a>
+                
+                <a href="/decision-maker/" class="mode-card">
+                    <h3>Duel</h3>
+                    <p>Pit two options head-to-head in a sudden-death match.</p>
+                </a>
+            </section>
+        </main>
 
-        <section class="modes-preview">
-            <a href="/decision-maker/" class="mode-card">
-                <h3>🎲 Fate Decides</h3>
-                <p>Leave it to the universe. Get a random verdict for your question.</p>
-            </a>
-            
-            <a href="/decision-maker/" class="mode-card">
-                <h3>💡 Trust Your Gut</h3>
-                <p>A quick quiz to reveal what you already know deep down.</p>
-            </a>
-            
-            <a href="/decision-maker/" class="mode-card">
-                <h3>⚔️ Duel</h3>
-                <p>Two options enter. One option leaves. Share the battle with friends.</p>
-            </a>
-        </section>
+        <div class="ad-slot ad-slot-footer"></div>
 
-        <section class="how-it-works">
-            <h2>How It Works</h2>
-            <p class="text-muted">Decision Arcade is a suite of tools designed to help you break through choice paralysis. Whether you want to leave it entirely to the cosmos with our deterministic Fate engine, listen to your inner voice through the Instinct quiz, or pit two options head-to-head in a Duel, we've got you covered. No sign-ups, no data harvesting — just simple, shareable decisions to get you unstuck and moving forward.</p>
-        </section>
-    </main>
-
-    <div class="ad-slot ad-slot-footer" style="max-width: 1200px; margin: 0 auto 2rem auto;">
-        
+        <footer class="site-footer reveal reveal-delay-3">
+            <div class="links">
+                <a href="/about/">About</a>
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <a href="/contact/">Contact</a>
+            </div>
+            <p class="text-muted" style="font-size: 0.85rem;">&copy; 2026 Decision Arcade. All rights reserved.</p>
+        </footer>
     </div>
-
-    <footer class="site-footer">
-        <div style="margin-bottom: 1rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-            <a href="/about/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">About</a>
-            <a href="/privacy/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Privacy Policy</a>
-            <a href="/terms/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Terms of Service</a>
-            <a href="/contact/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Contact</a>
-        </div>
-        <p class="text-muted" style="margin: 0;">&copy; 2026 Decision Arcade. All rights reserved.</p>
-    </footer>
 
     <script src="/js/seo.js"></script>
     <script src="/js/app.js"></script>

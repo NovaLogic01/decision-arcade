@@ -3,170 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yes or No Generator — Random Yes No Answer | Decision Arcade</title>
-    <meta name="description" content="Need a yes or no answer? Our random yes or no generator gives you an instant decision. Simple, fun, and shareable.">
-    <link rel="canonical" href="https://decisionarcade.netlify.app/yes-or-no/">
-    
-    <meta property="og:title" content="Yes or No Generator — Random Yes No Answer">
-    <meta property="og:description" content="Need a yes or no answer? Our random yes or no generator gives you an instant decision. Simple, fun, and shareable.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://decisionarcade.netlify.app/yes-or-no/">
-    <meta property="og:image" content="https://decisionarcade.netlify.app/assets/og-image.svg">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Yes or No Generator — Random Yes No Answer">
-    <meta name="twitter:description" content="Need a yes or no answer? Our random yes or no generator gives you an instant decision.">
-    <meta name="twitter:image" content="https://decisionarcade.netlify.app/assets/og-image.svg">
-    
+    <title>Yes or No | Decision Arcade</title>
+    <meta name="description" content="A simple yes or no generator for when you just need a binary answer.">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/css/style.css">
-    
-    <style>
-        body { background-color: #0A0A0F; color: #F0EDE6; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        a { color: #7C5CFF; text-decoration: none; }
-        .skip-link { position: absolute; top: -40px; left: 0; background: #7C5CFF; color: white; padding: 8px; z-index: 100; }
-        .skip-link:focus { top: 0; }
-        header, footer { padding: 1rem 2rem; border-bottom: 1px solid #1a1a24; }
-        footer { border-top: 1px solid #1a1a24; border-bottom: none; text-align: center; padding: 2rem; }
-        .site-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-        .site-nav .logo { font-weight: bold; font-size: 1.2rem; color: #F0EDE6; }
-        .site-nav .links { display: flex; gap: 1.5rem; }
-        .site-nav .links a { color: #F0EDE6; }
-        main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        h1 { text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #F0EDE6; }
-        .input-field { background: #1a1a24; border: 1px solid #2a2a36; color: #F0EDE6; padding: 1rem; width: 100%; max-width: 600px; border-radius: 8px; font-size: 1.1rem; margin-bottom: 1.5rem; min-height: 48px; }
-        .btn-primary { background: #7C5CFF; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.1rem; cursor: pointer; min-height: 48px; font-weight: bold; }
-        
-        .editorial, .faq { max-width: 800px; margin: 4rem auto; }
-        .editorial h2, .faq h2 { color: #F0EDE6; font-size: 2rem; margin-bottom: 1.5rem; }
-        .editorial p { color: #888899; margin-bottom: 1.5rem; }
-        .faq-item { margin-bottom: 2rem; }
-        .faq-item h3 { color: #F0EDE6; font-size: 1.2rem; margin-bottom: 0.5rem; }
-        .faq-item p { color: #888899; margin: 0; }
-        
-        #result-area { min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 3rem 0; }
-        .giant-verdict { font-size: 6rem; font-weight: bold; text-shadow: 0 0 30px rgba(124, 92, 255, 0.6); margin-bottom: 0.5rem; }
-        .verdict-tagline { font-size: 1.5rem; color: #888899; margin-bottom: 2rem; }
-        
-        @media (max-width: 768px) { .site-nav .links { display: none; } }
-    </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to content</a>
-    
-    <header>
-        <nav class="site-nav">
-            <a href="/" class="logo">Decision Arcade</a>
+    <div class="container">
+        <header>
+            <nav class="site-nav">
+                <a href="/" class="logo">Decision Arcade</a>
+                <div class="links">
+                    <a href="/decision-maker/">Tools</a>
+                    <a href="/about/">About</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content" style="padding: 4rem 0;">
+            <div class="ad-slot ad-slot-header"></div>
+
+            <div class="screen active text-center reveal">
+                <h1 style="margin-bottom: 1rem;">Yes or No?</h1>
+                <p class="text-muted" style="margin-bottom: 3rem;">Focus on your question, then click.</p>
+                
+                <button class="btn btn-primary" onclick="generate()" style="padding: 1.5rem 4rem; font-size: 1.5rem;">Decide</button>
+                
+                <div id="result-area" style="min-height: 250px; display: flex; align-items: center; justify-content: center; margin-top: 2rem;"></div>
+            </div>
+
+            <div class="ad-slot ad-slot-content"></div>
+        </main>
+
+        <footer class="site-footer">
             <div class="links">
-                <a href="/decision-maker/">Decision Maker</a>
-                <a href="/yes-or-no/">Yes or No</a>
-                <a href="/what-should-i-eat/">What Should I Eat</a>
-                <a href="/duel/">Duel</a>
                 <a href="/about/">About</a>
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <a href="/contact/">Contact</a>
             </div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        <h1>Yes or No Generator</h1>
-        
-        <div class="ad-slot ad-slot-header"></div>
-
-        <div style="text-align: center;">
-            <form id="yesno-form">
-                <input type="text" id="question-input" class="input-field" placeholder="Ask a yes or no question..." required>
-                <br>
-                <button type="submit" class="btn-primary">Ask the Universe</button>
-            </form>
-        </div>
-
-        <div id="result-area">
-            <!-- Dynamic result goes here -->
-        </div>
-
-        <div class="ad-slot ad-slot-content"></div>
-
-        <section class="editorial">
-            <h2>How the Yes or No Generator Works</h2>
-            <p>Sometimes you don't need a nuanced explanation or a four-part quiz — you just need a straightforward binary answer. That's exactly what the Yes or No Generator provides. When your brain refuses to cooperate and you're stuck in an endless loop of "what if," forcing a simple YES or NO can instantly break the deadlock.</p>
-            <p>Behind the scenes, we use a deterministic hash algorithm. This means we take the exact letters of your question and run them through a math formula to generate a number. If it's even, it's YES. If it's odd, it's NO. Because it's deterministic, the same question will always get the same answer. It's designed purely for fun and to provide a quick spark of decision-making momentum, not for divination or serious life choices!</p>
-        </section>
-
-        <section class="faq">
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <h3>Is the answer really random?</h3>
-                <p>It's deterministic — the same question always gets the same answer via a hash algorithm. Different wording = different answer.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I get a different answer?</h3>
-                <p>Rephrase your question slightly. Since the answer is based on the exact text, even a small change (like adding punctuation) will give a different result.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Should I actually follow this advice?</h3>
-                <p>This is for entertainment only. For important decisions, talk to a real person you trust. Do not make major life choices based on a web app.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Why does my friend get a different answer?</h3>
-                <p>They might be wording the question differently. Share your exact link or type the exact same string of letters to show them your result.</p>
-            </div>
-        </section>
-
-        <div class="ad-slot ad-slot-footer"></div>
-    </main>
-
-    <footer class="site-footer">
-        <div style="margin-bottom: 1rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-            <a href="/about/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">About</a>
-            <a href="/privacy/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Privacy Policy</a>
-            <a href="/terms/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Terms of Service</a>
-            <a href="/contact/" style="color: #888899; min-height: 48px; display: inline-flex; align-items: center;">Contact</a>
-        </div>
-        <p class="text-muted" style="margin: 0;">&copy; 2026 Decision Arcade. All rights reserved.</p>
-    </footer>
-
-    <script src="/js/seo.js"></script>
+            <p class="text-muted" style="font-size: 0.85rem;">&copy; 2026 Decision Arcade. All rights reserved.</p>
+        </footer>
+    </div>
+    
     <script src="/js/app.js"></script>
-    <script src="/js/fate.js"></script>
     <script>
-        document.getElementById('yesno-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const q = document.getElementById('question-input').value.trim();
-            if(!q) return;
-            
+        function generate() {
             const area = document.getElementById('result-area');
-            area.innerHTML = '<div style="font-size: 1.5rem; color: #7C5CFF;">Consulting...</div>';
+            area.innerHTML = '<div class="text-accent text-lg">Thinking...</div>';
             
             setTimeout(() => {
-                // Use deterministic hash from Fate engine if available, or fallback
-                let hash = 0;
-                if (window.DecisionArcade && window.DecisionArcade.Fate && window.DecisionArcade.Fate.hashString) {
-                    hash = window.DecisionArcade.Fate.hashString(q);
-                } else {
-                    hash = 5381;
-                    for (let i = 0; i < q.length; i++) { hash = ((hash << 5) + hash) + q.charCodeAt(i); }
-                    hash = Math.abs(hash);
-                }
+                const isYes = Math.random() > 0.5;
+                const result = isYes ? 'YES' : 'NO';
                 
-                const isYes = (hash % 2 === 0);
-                const verdict = isYes ? 'YES' : 'NO';
-                
-                const yesTaglines = ['Do it.', 'Absolutely.', 'Without a doubt.', 'Signs point to yes.'];
-                const noTaglines = ['Nope.', 'Not a chance.', 'Don\'t do it.', 'Signs point to no.'];
-                
-                const taglines = isYes ? yesTaglines : noTaglines;
-                const tagline = taglines[hash % taglines.length];
-                
-                area.innerHTML = `
-                    <div class="giant-verdict" style="color: ${isYes ? '#4CAF50' : '#F44336'};">${verdict}</div>
-                    <div class="verdict-tagline">${tagline}</div>
-                    <div style="display: flex; gap: 1rem;">
-                        <button class="btn btn-primary" onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied!');">Share Result</button>
+                area.innerHTML = 
+                    <div class="verdict-result reveal">
+                        <div class="verdict-text"> + result + </div>
                     </div>
-                `;
-            }, 1000);
-        });
+                ;
+            }, 800);
+        }
     </script>
 </body>
 </html>
