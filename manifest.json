@@ -1,0 +1,16 @@
+{
+  "name": "Decision Arcade",
+  "short_name": "Decisions",
+  "description": "Free online decision maker. Break through choice paralysis instantly.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050508",
+  "theme_color": "#050508",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
