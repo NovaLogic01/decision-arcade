@@ -1,284 +1,3054 @@
 {
+  "loading_messages": {
+    "FOOD": [
+      "Consulting the fridge...",
+      "Asking a chef...",
+      "Checking the pantry...",
+      "Sizzling the data...",
+      "Tasting options..."
+    ],
+    "SHOPPING": [
+      "Checking your bank balance's opinion...",
+      "Scanning barcodes...",
+      "Reviewing the budget...",
+      "Looking for discounts...",
+      "Weighing the cost..."
+    ],
+    "SOCIAL": [
+      "Reading the room...",
+      "Checking the group chat...",
+      "Analyzing the vibe...",
+      "Consulting your bestie...",
+      "Drafting a text..."
+    ],
+    "ENTERTAINMENT": [
+      "Browsing the catalog...",
+      "Checking reviews...",
+      "Warming up the screen...",
+      "Rolling the dice...",
+      "Tuning the dial..."
+    ],
+    "WORK": [
+      "Checking your calendar...",
+      "Consulting HR...",
+      "Drafting an email...",
+      "Reviewing the agenda...",
+      "Pinging the boss..."
+    ],
+    "STUDY": [
+      "Hitting the books...",
+      "Checking the syllabus...",
+      "Calculating your GPA...",
+      "Sharpening pencils...",
+      "Cramming data..."
+    ],
+    "TRAVEL": [
+      "Checking flights...",
+      "Packing bags...",
+      "Consulting the map...",
+      "Looking at the forecast...",
+      "Booking the ticket..."
+    ],
+    "GENERAL": [
+      "Consulting the cosmos...",
+      "Flipping the coin...",
+      "Gazing into the void...",
+      "Calculating probabilities...",
+      "Asking the universe..."
+    ]
+  },
   "verdicts": [
     {
-      "id": "gen_do_it_1",
+      "id": "FOO-p-YES-0",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful FOOD 0)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-YES-1",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful FOOD 1)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-YES-2",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful FOOD 2)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-NO-0",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful FOOD 0)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-NO-1",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful FOOD 1)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-NO-2",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful FOOD 2)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-MAYBE-0",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful FOOD 0)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-MAYBE-1",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful FOOD 1)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-MAYBE-2",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful FOOD 2)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-DOIT-0",
+      "category": "FOOD",
+      "intensity": "playful",
       "verdict": "DO IT",
-      "category": "GENERAL",
-      "tagline": "The universe just shrugged and said 'why not?'",
-      "explanation": "Sometimes the best decision is the one you stop overthinking."
+      "tagline": "DO IT (playful FOOD 0)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
     },
     {
-      "id": "gen_do_it_2",
-      "verdict": "HELL YES",
-      "category": "GENERAL",
-      "tagline": "Full send. No regrets.",
-      "explanation": "If it excites you and scares you a little, it's the right choice."
-    },
-    {
-      "id": "gen_dont_1",
-      "verdict": "DON'T DO IT",
-      "category": "GENERAL",
-      "tagline": "Abort mission. I repeat, abort mission.",
-      "explanation": "You asked because you already knew it was a bad idea."
-    },
-    {
-      "id": "gen_dont_2",
-      "verdict": "HARD NO",
-      "category": "GENERAL",
-      "tagline": "Walk away slowly, then break into a sprint.",
-      "explanation": "Save your energy for something better."
-    },
-    {
-      "id": "gen_wait_1",
-      "verdict": "WAIT 24 HOURS",
-      "category": "GENERAL",
-      "tagline": "Sleep on it. Your brain needs a reboot.",
-      "explanation": "Impulse control is a beautiful thing. Give it a day."
-    },
-    {
-      "id": "gen_wait_2",
-      "verdict": "PAUSE",
-      "category": "GENERAL",
-      "tagline": "Hold your horses.",
-      "explanation": "Let the dust settle before making a move."
-    },
-    {
-      "id": "gen_alt_1",
-      "verdict": "TRY SOMETHING ELSE",
-      "category": "GENERAL",
-      "tagline": "Plot twist: neither of those.",
-      "explanation": "There is a third option you're ignoring."
-    },
-    {
-      "id": "gen_small_1",
-      "verdict": "TAKE THE SMALLER BET",
-      "category": "GENERAL",
-      "tagline": "Dip a toe before diving in.",
-      "explanation": "Test the waters. You don't have to commit fully yet."
-    },
-    {
-      "id": "gen_flip_1",
-      "verdict": "FLIP A COIN",
-      "category": "GENERAL",
-      "tagline": "Leave it to chance.",
-      "explanation": "If you're disappointed by the result, choose the other one."
-    },
-    {
-      "id": "gen_ask_1",
-      "verdict": "ASK A FRIEND",
-      "category": "GENERAL",
-      "tagline": "Phone a lifeline.",
-      "explanation": "You need an outside perspective on this one."
-    },
-    {
-      "id": "food_do_1",
-      "verdict": "EAT IT",
+      "id": "FOO-p-DOIT-1",
       "category": "FOOD",
-      "tagline": "Your stomach has spoken.",
-      "explanation": "Life is too short for boring meals. Feast!"
-    },
-    {
-      "id": "food_do_2",
-      "verdict": "TREAT YOURSELF",
-      "category": "FOOD",
-      "tagline": "Calories don't count today.",
-      "explanation": "You earned it. Enjoy every bite."
-    },
-    {
-      "id": "food_dont_1",
-      "verdict": "SKIP IT",
-      "category": "FOOD",
-      "tagline": "Have a glass of water instead.",
-      "explanation": "You're probably just bored, not hungry."
-    },
-    {
-      "id": "food_alt_1",
-      "verdict": "COOK SOMETHING",
-      "category": "FOOD",
-      "tagline": "Look at what's in the fridge.",
-      "explanation": "Chef it up! Save some money and learn a skill."
-    },
-    {
-      "id": "food_alt_2",
-      "verdict": "ORDER DELIVERY",
-      "category": "FOOD",
-      "tagline": "Let someone else do the dishes.",
-      "explanation": "Maximum comfort, zero effort."
-    },
-    {
-      "id": "food_spicy_1",
-      "verdict": "GO SPICY",
-      "category": "FOOD",
-      "tagline": "Feel the burn.",
-      "explanation": "Live on the edge. Order the hot stuff."
-    },
-    {
-      "id": "shop_buy_1",
-      "verdict": "BUY IT",
-      "category": "SHOPPING",
-      "tagline": "Treat yourself. Add to cart.",
-      "explanation": "If you've been thinking about it for days, just get it."
-    },
-    {
-      "id": "shop_dont_1",
-      "verdict": "PUT IT BACK",
-      "category": "SHOPPING",
-      "tagline": "Your wallet thanks you.",
-      "explanation": "Do you need it, or do you just want the dopamine hit?"
-    },
-    {
-      "id": "shop_wait_1",
-      "verdict": "WAIT A WEEK",
-      "category": "SHOPPING",
-      "tagline": "The 7-day rule applies here.",
-      "explanation": "If you still want it next week, then buy it."
-    },
-    {
-      "id": "shop_alt_1",
-      "verdict": "BUY USED",
-      "category": "SHOPPING",
-      "tagline": "Thrift it.",
-      "explanation": "Save money and the planet. Look for a secondhand deal."
-    },
-    {
-      "id": "shop_save_1",
-      "verdict": "SAVE THE MONEY",
-      "category": "SHOPPING",
-      "tagline": "Watch the number go up.",
-      "explanation": "Future you will be grateful for the extra cash."
-    },
-    {
-      "id": "soc_text_1",
-      "verdict": "SEND THAT TEXT",
-      "category": "SOCIAL",
-      "tagline": "Hit send and throw your phone across the room.",
-      "explanation": "What's the worst that could happen?"
-    },
-    {
-      "id": "soc_dont_text_1",
-      "verdict": "DO NOT TEXT",
-      "category": "SOCIAL",
-      "tagline": "Put the phone down.",
-      "explanation": "Step away. It's a trap."
-    },
-    {
-      "id": "soc_go_1",
-      "verdict": "GO OUT",
-      "category": "SOCIAL",
-      "tagline": "Put on real pants.",
-      "explanation": "You might actually have fun. Go socialize."
-    },
-    {
-      "id": "soc_stay_1",
-      "verdict": "STAY IN",
-      "category": "SOCIAL",
-      "tagline": "Your couch misses you.",
-      "explanation": "Embrace the cozy hermit life tonight."
-    },
-    {
-      "id": "soc_call_1",
-      "verdict": "CALL THEM",
-      "category": "SOCIAL",
-      "tagline": "Use your voice.",
-      "explanation": "Texts get misinterpreted. Just call."
-    },
-    {
-      "id": "ent_watch_1",
-      "verdict": "WATCH IT",
-      "category": "ENTERTAINMENT",
-      "tagline": "Popcorn time.",
-      "explanation": "Dive in and enjoy the show."
-    },
-    {
-      "id": "ent_dont_1",
-      "verdict": "SKIP IT",
-      "category": "ENTERTAINMENT",
-      "tagline": "Don't waste your time.",
-      "explanation": "The reviews are right. It's not worth it."
-    },
-    {
-      "id": "ent_play_1",
-      "verdict": "PLAY A GAME",
-      "category": "ENTERTAINMENT",
-      "tagline": "Time to level up.",
-      "explanation": "Escape reality for a bit."
-    },
-    {
-      "id": "ent_read_1",
-      "verdict": "READ INSTEAD",
-      "category": "ENTERTAINMENT",
-      "tagline": "Books are better anyway.",
-      "explanation": "Give your eyes a break from the blue light."
-    },
-    {
-      "id": "study_do_1",
-      "verdict": "STUDY NOW",
-      "category": "STUDY",
-      "tagline": "Grind time.",
-      "explanation": "Future you will thank present you."
-    },
-    {
-      "id": "study_break_1",
-      "verdict": "TAKE A BREAK",
-      "category": "STUDY",
-      "tagline": "Brain full. Need rest.",
-      "explanation": "You can't pour from an empty cup. Relax."
-    },
-    {
-      "id": "study_sleep_1",
-      "verdict": "GO TO SLEEP",
-      "category": "STUDY",
-      "tagline": "Cramming doesn't work.",
-      "explanation": "Sleep will help you remember more than staying up."
-    },
-    {
-      "id": "study_group_1",
-      "verdict": "STUDY GROUP",
-      "category": "STUDY",
-      "tagline": "Misery loves company.",
-      "explanation": "Find a friend to suffer through this with."
-    },
-    {
-      "id": "trav_go_1",
-      "verdict": "BOOK THE FLIGHT",
-      "category": "TRAVEL",
-      "tagline": "Adventure is calling.",
-      "explanation": "Money returns. Time doesn't."
-    },
-    {
-      "id": "trav_dont_1",
-      "verdict": "STAY HOME",
-      "category": "TRAVEL",
-      "tagline": "There's no place like home.",
-      "explanation": "Maybe this isn't the right time. Plan for later."
-    },
-    {
-      "id": "trav_cheap_1",
-      "verdict": "GO BUDGET",
-      "category": "TRAVEL",
-      "tagline": "Hostel life it is.",
-      "explanation": "You don't need luxury to have a good time."
-    },
-    {
-      "id": "work_do_1",
+      "intensity": "playful",
       "verdict": "DO IT",
-      "category": "WORK",
-      "tagline": "Secure the bag.",
-      "explanation": "It's a good career move. Take the leap."
+      "tagline": "DO IT (playful FOOD 1)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
     },
     {
-      "id": "work_dont_1",
-      "verdict": "DON'T DO IT",
-      "category": "WORK",
-      "tagline": "Not worth the stress.",
-      "explanation": "Your peace of mind is more important."
+      "id": "FOO-p-DOIT-2",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful FOOD 2)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
     },
     {
-      "id": "work_ask_1",
-      "verdict": "ASK FOR MORE",
+      "id": "FOO-p-SKIPIT-0",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful FOOD 0)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-SKIPIT-1",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful FOOD 1)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-p-SKIPIT-2",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful FOOD 2)",
+      "explanation": "This is an adaptive playful explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-YES-0",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct FOOD 0)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-YES-1",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct FOOD 1)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-YES-2",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct FOOD 2)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-NO-0",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct FOOD 0)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-NO-1",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct FOOD 1)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-NO-2",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct FOOD 2)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-MAYBE-0",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct FOOD 0)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-MAYBE-1",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct FOOD 1)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-MAYBE-2",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct FOOD 2)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-DOIT-0",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct FOOD 0)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-DOIT-1",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct FOOD 1)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-DOIT-2",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct FOOD 2)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-SKIPIT-0",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct FOOD 0)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-SKIPIT-1",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct FOOD 1)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-d-SKIPIT-2",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct FOOD 2)",
+      "explanation": "This is an adaptive direct explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-YES-0",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle FOOD 0)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-YES-1",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle FOOD 1)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-YES-2",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle FOOD 2)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-NO-0",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle FOOD 0)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-NO-1",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle FOOD 1)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-NO-2",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle FOOD 2)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-MAYBE-0",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle FOOD 0)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-MAYBE-1",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle FOOD 1)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-MAYBE-2",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle FOOD 2)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-DOIT-0",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle FOOD 0)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-DOIT-1",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle FOOD 1)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-DOIT-2",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle FOOD 2)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-SKIPIT-0",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle FOOD 0)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-SKIPIT-1",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle FOOD 1)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "FOO-g-SKIPIT-2",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle FOOD 2)",
+      "explanation": "This is an adaptive gentle explanation for FOOD."
+    },
+    {
+      "id": "SHO-p-YES-0",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful SHOPPING 0)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-YES-1",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful SHOPPING 1)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-YES-2",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful SHOPPING 2)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-NO-0",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful SHOPPING 0)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-NO-1",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful SHOPPING 1)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-NO-2",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful SHOPPING 2)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-MAYBE-0",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful SHOPPING 0)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-MAYBE-1",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful SHOPPING 1)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-MAYBE-2",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful SHOPPING 2)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-DOIT-0",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful SHOPPING 0)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-DOIT-1",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful SHOPPING 1)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-DOIT-2",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful SHOPPING 2)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-SKIPIT-0",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful SHOPPING 0)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-SKIPIT-1",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful SHOPPING 1)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-p-SKIPIT-2",
+      "category": "SHOPPING",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful SHOPPING 2)",
+      "explanation": "This is an adaptive playful explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-YES-0",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct SHOPPING 0)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-YES-1",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct SHOPPING 1)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-YES-2",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct SHOPPING 2)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-NO-0",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct SHOPPING 0)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-NO-1",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct SHOPPING 1)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-NO-2",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct SHOPPING 2)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-MAYBE-0",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct SHOPPING 0)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-MAYBE-1",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct SHOPPING 1)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-MAYBE-2",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct SHOPPING 2)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-DOIT-0",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct SHOPPING 0)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-DOIT-1",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct SHOPPING 1)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-DOIT-2",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct SHOPPING 2)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-SKIPIT-0",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct SHOPPING 0)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-SKIPIT-1",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct SHOPPING 1)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-d-SKIPIT-2",
+      "category": "SHOPPING",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct SHOPPING 2)",
+      "explanation": "This is an adaptive direct explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-YES-0",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle SHOPPING 0)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-YES-1",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle SHOPPING 1)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-YES-2",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle SHOPPING 2)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-NO-0",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle SHOPPING 0)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-NO-1",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle SHOPPING 1)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-NO-2",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle SHOPPING 2)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-MAYBE-0",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle SHOPPING 0)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-MAYBE-1",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle SHOPPING 1)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-MAYBE-2",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle SHOPPING 2)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-DOIT-0",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle SHOPPING 0)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-DOIT-1",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle SHOPPING 1)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-DOIT-2",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle SHOPPING 2)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-SKIPIT-0",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle SHOPPING 0)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-SKIPIT-1",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle SHOPPING 1)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SHO-g-SKIPIT-2",
+      "category": "SHOPPING",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle SHOPPING 2)",
+      "explanation": "This is an adaptive gentle explanation for SHOPPING."
+    },
+    {
+      "id": "SOC-p-YES-0",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful SOCIAL 0)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-YES-1",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful SOCIAL 1)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-YES-2",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful SOCIAL 2)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-NO-0",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful SOCIAL 0)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-NO-1",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful SOCIAL 1)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-NO-2",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful SOCIAL 2)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-MAYBE-0",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful SOCIAL 0)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-MAYBE-1",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful SOCIAL 1)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-MAYBE-2",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful SOCIAL 2)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-DOIT-0",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful SOCIAL 0)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-DOIT-1",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful SOCIAL 1)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-DOIT-2",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful SOCIAL 2)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-SKIPIT-0",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful SOCIAL 0)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-SKIPIT-1",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful SOCIAL 1)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-p-SKIPIT-2",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful SOCIAL 2)",
+      "explanation": "This is an adaptive playful explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-YES-0",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct SOCIAL 0)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-YES-1",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct SOCIAL 1)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-YES-2",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct SOCIAL 2)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-NO-0",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct SOCIAL 0)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-NO-1",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct SOCIAL 1)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-NO-2",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct SOCIAL 2)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-MAYBE-0",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct SOCIAL 0)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-MAYBE-1",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct SOCIAL 1)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-MAYBE-2",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct SOCIAL 2)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-DOIT-0",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct SOCIAL 0)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-DOIT-1",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct SOCIAL 1)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-DOIT-2",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct SOCIAL 2)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-SKIPIT-0",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct SOCIAL 0)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-SKIPIT-1",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct SOCIAL 1)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-d-SKIPIT-2",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct SOCIAL 2)",
+      "explanation": "This is an adaptive direct explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-YES-0",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle SOCIAL 0)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-YES-1",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle SOCIAL 1)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-YES-2",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle SOCIAL 2)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-NO-0",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle SOCIAL 0)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-NO-1",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle SOCIAL 1)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-NO-2",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle SOCIAL 2)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-MAYBE-0",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle SOCIAL 0)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-MAYBE-1",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle SOCIAL 1)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-MAYBE-2",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle SOCIAL 2)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-DOIT-0",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle SOCIAL 0)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-DOIT-1",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle SOCIAL 1)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-DOIT-2",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle SOCIAL 2)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-SKIPIT-0",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle SOCIAL 0)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-SKIPIT-1",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle SOCIAL 1)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "SOC-g-SKIPIT-2",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle SOCIAL 2)",
+      "explanation": "This is an adaptive gentle explanation for SOCIAL."
+    },
+    {
+      "id": "ENT-p-YES-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-YES-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-YES-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-NO-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-NO-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-NO-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-MAYBE-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-MAYBE-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-MAYBE-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-DOIT-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-DOIT-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-DOIT-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-SKIPIT-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-SKIPIT-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-p-SKIPIT-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive playful explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-YES-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-YES-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-YES-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-NO-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-NO-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-NO-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-MAYBE-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-MAYBE-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-MAYBE-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-DOIT-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-DOIT-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-DOIT-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-SKIPIT-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-SKIPIT-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-d-SKIPIT-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive direct explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-YES-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-YES-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-YES-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-NO-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-NO-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-NO-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-MAYBE-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-MAYBE-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-MAYBE-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-DOIT-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-DOIT-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-DOIT-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-SKIPIT-0",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle ENTERTAINMENT 0)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-SKIPIT-1",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle ENTERTAINMENT 1)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "ENT-g-SKIPIT-2",
+      "category": "ENTERTAINMENT",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle ENTERTAINMENT 2)",
+      "explanation": "This is an adaptive gentle explanation for ENTERTAINMENT."
+    },
+    {
+      "id": "WOR-p-YES-0",
       "category": "WORK",
-      "tagline": "Know your worth.",
-      "explanation": "Don't settle. Negotiate."
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful WORK 0)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-YES-1",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful WORK 1)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-YES-2",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful WORK 2)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-NO-0",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful WORK 0)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-NO-1",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful WORK 1)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-NO-2",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful WORK 2)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-MAYBE-0",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful WORK 0)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-MAYBE-1",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful WORK 1)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-MAYBE-2",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful WORK 2)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-DOIT-0",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful WORK 0)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-DOIT-1",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful WORK 1)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-DOIT-2",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful WORK 2)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-SKIPIT-0",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful WORK 0)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-SKIPIT-1",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful WORK 1)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-p-SKIPIT-2",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful WORK 2)",
+      "explanation": "This is an adaptive playful explanation for WORK."
+    },
+    {
+      "id": "WOR-d-YES-0",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct WORK 0)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-YES-1",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct WORK 1)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-YES-2",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct WORK 2)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-NO-0",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct WORK 0)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-NO-1",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct WORK 1)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-NO-2",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct WORK 2)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-MAYBE-0",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct WORK 0)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-MAYBE-1",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct WORK 1)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-MAYBE-2",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct WORK 2)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-DOIT-0",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct WORK 0)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-DOIT-1",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct WORK 1)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-DOIT-2",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct WORK 2)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-SKIPIT-0",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct WORK 0)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-SKIPIT-1",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct WORK 1)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-d-SKIPIT-2",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct WORK 2)",
+      "explanation": "This is an adaptive direct explanation for WORK."
+    },
+    {
+      "id": "WOR-g-YES-0",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle WORK 0)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-YES-1",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle WORK 1)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-YES-2",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle WORK 2)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-NO-0",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle WORK 0)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-NO-1",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle WORK 1)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-NO-2",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle WORK 2)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-MAYBE-0",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle WORK 0)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-MAYBE-1",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle WORK 1)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-MAYBE-2",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle WORK 2)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-DOIT-0",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle WORK 0)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-DOIT-1",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle WORK 1)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-DOIT-2",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle WORK 2)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-SKIPIT-0",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle WORK 0)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-SKIPIT-1",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle WORK 1)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "WOR-g-SKIPIT-2",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle WORK 2)",
+      "explanation": "This is an adaptive gentle explanation for WORK."
+    },
+    {
+      "id": "STU-p-YES-0",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful STUDY 0)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-YES-1",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful STUDY 1)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-YES-2",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful STUDY 2)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-NO-0",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful STUDY 0)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-NO-1",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful STUDY 1)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-NO-2",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful STUDY 2)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-MAYBE-0",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful STUDY 0)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-MAYBE-1",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful STUDY 1)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-MAYBE-2",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful STUDY 2)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-DOIT-0",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful STUDY 0)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-DOIT-1",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful STUDY 1)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-DOIT-2",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful STUDY 2)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-SKIPIT-0",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful STUDY 0)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-SKIPIT-1",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful STUDY 1)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-p-SKIPIT-2",
+      "category": "STUDY",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful STUDY 2)",
+      "explanation": "This is an adaptive playful explanation for STUDY."
+    },
+    {
+      "id": "STU-d-YES-0",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct STUDY 0)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-YES-1",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct STUDY 1)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-YES-2",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct STUDY 2)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-NO-0",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct STUDY 0)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-NO-1",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct STUDY 1)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-NO-2",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct STUDY 2)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-MAYBE-0",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct STUDY 0)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-MAYBE-1",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct STUDY 1)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-MAYBE-2",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct STUDY 2)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-DOIT-0",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct STUDY 0)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-DOIT-1",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct STUDY 1)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-DOIT-2",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct STUDY 2)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-SKIPIT-0",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct STUDY 0)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-SKIPIT-1",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct STUDY 1)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-d-SKIPIT-2",
+      "category": "STUDY",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct STUDY 2)",
+      "explanation": "This is an adaptive direct explanation for STUDY."
+    },
+    {
+      "id": "STU-g-YES-0",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle STUDY 0)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-YES-1",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle STUDY 1)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-YES-2",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle STUDY 2)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-NO-0",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle STUDY 0)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-NO-1",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle STUDY 1)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-NO-2",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle STUDY 2)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-MAYBE-0",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle STUDY 0)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-MAYBE-1",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle STUDY 1)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-MAYBE-2",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle STUDY 2)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-DOIT-0",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle STUDY 0)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-DOIT-1",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle STUDY 1)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-DOIT-2",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle STUDY 2)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-SKIPIT-0",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle STUDY 0)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-SKIPIT-1",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle STUDY 1)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "STU-g-SKIPIT-2",
+      "category": "STUDY",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle STUDY 2)",
+      "explanation": "This is an adaptive gentle explanation for STUDY."
+    },
+    {
+      "id": "TRA-p-YES-0",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful TRAVEL 0)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-YES-1",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful TRAVEL 1)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-YES-2",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful TRAVEL 2)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-NO-0",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful TRAVEL 0)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-NO-1",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful TRAVEL 1)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-NO-2",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful TRAVEL 2)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-MAYBE-0",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful TRAVEL 0)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-MAYBE-1",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful TRAVEL 1)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-MAYBE-2",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful TRAVEL 2)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-DOIT-0",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful TRAVEL 0)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-DOIT-1",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful TRAVEL 1)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-DOIT-2",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful TRAVEL 2)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-SKIPIT-0",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful TRAVEL 0)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-SKIPIT-1",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful TRAVEL 1)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-p-SKIPIT-2",
+      "category": "TRAVEL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful TRAVEL 2)",
+      "explanation": "This is an adaptive playful explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-YES-0",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct TRAVEL 0)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-YES-1",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct TRAVEL 1)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-YES-2",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct TRAVEL 2)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-NO-0",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct TRAVEL 0)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-NO-1",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct TRAVEL 1)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-NO-2",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct TRAVEL 2)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-MAYBE-0",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct TRAVEL 0)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-MAYBE-1",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct TRAVEL 1)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-MAYBE-2",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct TRAVEL 2)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-DOIT-0",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct TRAVEL 0)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-DOIT-1",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct TRAVEL 1)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-DOIT-2",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct TRAVEL 2)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-SKIPIT-0",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct TRAVEL 0)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-SKIPIT-1",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct TRAVEL 1)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-d-SKIPIT-2",
+      "category": "TRAVEL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct TRAVEL 2)",
+      "explanation": "This is an adaptive direct explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-YES-0",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle TRAVEL 0)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-YES-1",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle TRAVEL 1)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-YES-2",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle TRAVEL 2)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-NO-0",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle TRAVEL 0)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-NO-1",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle TRAVEL 1)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-NO-2",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle TRAVEL 2)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-MAYBE-0",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle TRAVEL 0)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-MAYBE-1",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle TRAVEL 1)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-MAYBE-2",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle TRAVEL 2)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-DOIT-0",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle TRAVEL 0)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-DOIT-1",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle TRAVEL 1)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-DOIT-2",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle TRAVEL 2)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-SKIPIT-0",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle TRAVEL 0)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-SKIPIT-1",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle TRAVEL 1)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "TRA-g-SKIPIT-2",
+      "category": "TRAVEL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle TRAVEL 2)",
+      "explanation": "This is an adaptive gentle explanation for TRAVEL."
+    },
+    {
+      "id": "GEN-p-YES-0",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful GENERAL 0)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-YES-1",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful GENERAL 1)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-YES-2",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "YES (playful GENERAL 2)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-NO-0",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful GENERAL 0)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-NO-1",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful GENERAL 1)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-NO-2",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "NO (playful GENERAL 2)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-MAYBE-0",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful GENERAL 0)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-MAYBE-1",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful GENERAL 1)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-MAYBE-2",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (playful GENERAL 2)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-DOIT-0",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful GENERAL 0)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-DOIT-1",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful GENERAL 1)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-DOIT-2",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "DO IT (playful GENERAL 2)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-SKIPIT-0",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful GENERAL 0)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-SKIPIT-1",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful GENERAL 1)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-p-SKIPIT-2",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (playful GENERAL 2)",
+      "explanation": "This is an adaptive playful explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-YES-0",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct GENERAL 0)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-YES-1",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct GENERAL 1)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-YES-2",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "YES (direct GENERAL 2)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-NO-0",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct GENERAL 0)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-NO-1",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct GENERAL 1)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-NO-2",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "NO (direct GENERAL 2)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-MAYBE-0",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct GENERAL 0)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-MAYBE-1",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct GENERAL 1)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-MAYBE-2",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (direct GENERAL 2)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-DOIT-0",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct GENERAL 0)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-DOIT-1",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct GENERAL 1)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-DOIT-2",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "DO IT",
+      "tagline": "DO IT (direct GENERAL 2)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-SKIPIT-0",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct GENERAL 0)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-SKIPIT-1",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct GENERAL 1)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-d-SKIPIT-2",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (direct GENERAL 2)",
+      "explanation": "This is an adaptive direct explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-YES-0",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle GENERAL 0)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-YES-1",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle GENERAL 1)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-YES-2",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "YES (gentle GENERAL 2)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-NO-0",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle GENERAL 0)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-NO-1",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle GENERAL 1)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-NO-2",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "NO (gentle GENERAL 2)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-MAYBE-0",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle GENERAL 0)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-MAYBE-1",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle GENERAL 1)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-MAYBE-2",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "MAYBE (gentle GENERAL 2)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-DOIT-0",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle GENERAL 0)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-DOIT-1",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle GENERAL 1)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-DOIT-2",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "DO IT",
+      "tagline": "DO IT (gentle GENERAL 2)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-SKIPIT-0",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle GENERAL 0)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-SKIPIT-1",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle GENERAL 1)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "GEN-g-SKIPIT-2",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "SKIP IT (gentle GENERAL 2)",
+      "explanation": "This is an adaptive gentle explanation for GENERAL."
+    },
+    {
+      "id": "actual-0",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "Devour it.",
+      "explanation": "Calories do not count when the universe says yes."
+    },
+    {
+      "id": "actual-1",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "Treat yourself.",
+      "explanation": "You deserve something delicious right now."
+    },
+    {
+      "id": "actual-2",
+      "category": "FOOD",
+      "intensity": "playful",
+      "verdict": "NO",
+      "tagline": "Put the fork down.",
+      "explanation": "Maybe drink a glass of water instead."
+    },
+    {
+      "id": "actual-3",
+      "category": "FOOD",
+      "intensity": "direct",
+      "verdict": "SKIP IT",
+      "tagline": "Not this time.",
+      "explanation": "Save your appetite for something better."
+    },
+    {
+      "id": "actual-4",
+      "category": "FOOD",
+      "intensity": "gentle",
+      "verdict": "MAYBE",
+      "tagline": "Listen to your body.",
+      "explanation": "If you are truly hungry, go for it. If you are just bored, wait."
+    },
+    {
+      "id": "actual-5",
+      "category": "WORK",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "Send it.",
+      "explanation": "What is the worst that could happen? (Do not answer that)."
+    },
+    {
+      "id": "actual-6",
+      "category": "WORK",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "Hold off.",
+      "explanation": "Now is not the strategic moment to make this move."
+    },
+    {
+      "id": "actual-7",
+      "category": "WORK",
+      "intensity": "gentle",
+      "verdict": "SKIP IT",
+      "tagline": "Protect your peace.",
+      "explanation": "You do not need to take on more than you can handle right now."
+    },
+    {
+      "id": "actual-8",
+      "category": "SOCIAL",
+      "intensity": "playful",
+      "verdict": "YES",
+      "tagline": "Slide in.",
+      "explanation": "Be bold. The plot needs thickening."
+    },
+    {
+      "id": "actual-9",
+      "category": "SOCIAL",
+      "intensity": "direct",
+      "verdict": "NO",
+      "tagline": "Leave them on read.",
+      "explanation": "Silence is a perfectly valid response."
+    },
+    {
+      "id": "actual-10",
+      "category": "SOCIAL",
+      "intensity": "gentle",
+      "verdict": "YES",
+      "tagline": "Reach out.",
+      "explanation": "Connection is worth the vulnerability."
+    },
+    {
+      "id": "actual-11",
+      "category": "GENERAL",
+      "intensity": "playful",
+      "verdict": "DO IT",
+      "tagline": "Full send.",
+      "explanation": "We are doing it for the plot."
+    },
+    {
+      "id": "actual-12",
+      "category": "GENERAL",
+      "intensity": "direct",
+      "verdict": "YES",
+      "tagline": "Approved.",
+      "explanation": "The logic is sound. Execute."
+    },
+    {
+      "id": "actual-13",
+      "category": "GENERAL",
+      "intensity": "gentle",
+      "verdict": "NO",
+      "tagline": "Not right now.",
+      "explanation": "Give yourself permission to pass on this one."
     }
   ]
 }

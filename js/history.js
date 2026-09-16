@@ -37,6 +37,54 @@
     localStorage.removeItem(HISTORY_KEY);
   };
 
+  DecisionArcade.History.getInsight = function(history) {
+    if (history.length < 5) return null;
+    
+    // Count categories
+    const catCounts = {};
+    const resCounts = {};
+    
+    history.forEach(item => {
+      if (item.category && item.category !== 'GENERAL') {
+        catCounts[item.category] = (catCounts[item.category] || 0) + 1;
+      }
+      if (item.result) {
+        resCounts[item.result] = (resCounts[item.result] || 0) + 1;
+      }
+    });
+
+    let topCat = null;
+    let maxCat = 0;
+    for (const [cat, count] of Object.entries(catCounts)) {
+      if (count > maxCat) {
+        maxCat = count;
+        topCat = cat;
+      }
+    }
+
+    let topRes = null;
+    let maxRes = 0;
+    for (const [res, count] of Object.entries(resCounts)) {
+      if (count > maxRes) {
+        maxRes = count;
+        topRes = res;
+      }
+    }
+
+    // Pick an insight based on some simple logic
+    if (maxCat >= 3) {
+      return `Pattern noticed: You've been thinking about ${topCat.toLowerCase()} a lot lately.`;
+    }
+    if (maxRes >= 4) {
+      return `Pattern noticed: You've leaned towards "${topRes}" in ${maxRes} of your recent decisions.`;
+    }
+    if (history.length === MAX_ENTRIES) {
+      return `You've made a lot of decisions recently. Take a breath!`;
+    }
+
+    return null;
+  };
+
   DecisionArcade.History.render = function(containerEl) {
     if (!containerEl) return;
     containerEl.innerHTML = '';
@@ -48,6 +96,21 @@
       emptyMsg.textContent = 'No decisions yet. Start your journey!';
       containerEl.appendChild(emptyMsg);
       return;
+    }
+
+    // V3 Local Pattern Insights
+    const insight = DecisionArcade.History.getInsight(history);
+    if (insight) {
+      const insightDiv = document.createElement('div');
+      insightDiv.style.padding = '1rem';
+      insightDiv.style.marginBottom = '1.5rem';
+      insightDiv.style.border = '1px solid var(--accent-glow)';
+      insightDiv.style.borderRadius = '8px';
+      insightDiv.style.background = 'var(--glass)';
+      insightDiv.style.color = 'var(--text)';
+      insightDiv.style.fontSize = '0.9rem';
+      insightDiv.innerHTML = `<strong>🔮 Insight:</strong> ${insight}`;
+      containerEl.appendChild(insightDiv);
     }
 
     history.forEach(item => {
@@ -77,6 +140,7 @@
 
     const clearBtn = document.createElement('button');
     clearBtn.className = 'history-clear btn-ghost';
+    clearBtn.style.marginTop = '1rem';
     clearBtn.textContent = 'Clear History';
     clearBtn.addEventListener('click', () => {
       DecisionArcade.History.clear();
