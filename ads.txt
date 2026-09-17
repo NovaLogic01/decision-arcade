@@ -1,3 +1,1 @@
-# Decision Arcade - ads.txt
-# Add your Google AdSense publisher ID below when approved:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-5401678251896562, DIRECT, f08c47fec0942fa0
